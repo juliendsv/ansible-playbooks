@@ -1,4 +1,4 @@
-(Forked from https://github.com/jlund/ansible-go)
+(Forked and modified from https://github.com/jlund/ansible-go)
 
 Go
 ========
