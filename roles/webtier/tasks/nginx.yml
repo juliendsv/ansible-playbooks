@@ -1,0 +1,7 @@
+- name: install nginx
+  action: apt pkg=nginx state=latest
+  notify:
+    - restart nginx
+- name: ensure nginx is running
+  service: name=nginx state=started
+
