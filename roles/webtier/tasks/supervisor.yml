@@ -1,0 +1,2 @@
+- name: install supervisor
+  action: apt pkg=supervisor state=latest

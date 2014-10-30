@@ -1,1 +1,3 @@
+- include: supervisor.yml tags=supervisor
 - include: nginx.yml tags=nginx
+
