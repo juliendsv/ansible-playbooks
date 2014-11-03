@@ -1,2 +1,12 @@
+- group: name=supervisor system=yes state=present
+- user: name=deploy group=supervisor
+
 - name: install supervisor
   action: apt pkg=supervisor state=latest
+
+- name: Create the Supervisor config file
+  template: src=supervisor_conf.j2
+            dest=/etc/supervisor/supervisord.conf
+            backup=yes
+
+- service: name=supervisor state=restarted
