@@ -14,5 +14,4 @@
     - build-essential
     - htop
     - git
-    - supervisor
   tags: packages
